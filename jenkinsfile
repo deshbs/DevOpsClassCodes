@@ -18,12 +18,12 @@ pipeline {
         }
 		stage('we r MetricChecking') { 
             steps {
-              	sh "mvn mvn cobertura:cobertura -Dcobertura.report.format=xml"
+              	sh "mvn cobertura:cobertura -Dcobertura.report.format=xml"
             }
         }
         stage('we are Packaging') { 
             steps {
-                sh "mvn mvn package"
+                sh "mvn package"
             }
         }
         }
