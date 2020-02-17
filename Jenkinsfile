@@ -13,7 +13,7 @@ pipeline {
         }
 		stage('we r Testing') { 
             steps {
-              		sh "mvn test"
+              	sh "mvn test"
             }
         }
 		stage('we r MetricChecking') { 
